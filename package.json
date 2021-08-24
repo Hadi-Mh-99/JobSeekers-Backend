@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "convert-array-to-csv": "^2.0.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.14.2",
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.1",
+    "image-to-base64": "^2.1.1",
+    "isomorphic-fetch": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken-refresh": "^5.7.0",
+    "mongoose": "^5.10.13",
+    "multer": "^1.4.2",
+    "neat-csv": "^6.0.0",
+    "node-cron": "^3.0.0",
+    "node-csv": "^0.1.2",
+    "nodemailer": "^6.4.16",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
+    "sharp": "^0.27.0",
+    "sort-algorithms-js": "^3.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
